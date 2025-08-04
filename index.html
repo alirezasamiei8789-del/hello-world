@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>باشگاه فرهنگی ورزشی پرسپولیس</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Cuneiform';
+      src: url('fonts/cuneiform.ttf');
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Vazir', sans-serif;
+      background-color: #111;
+      color: #f2f2f2;
+    }
+
+    .top-banner {
+      width: 100%;
+      aspect-ratio: 16 / 6;
+      background-color: #222;
+      background-image: url('images/ban.webp');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-bottom: 3px solid #900;
+    }
+
+    .logo-centered {
+      text-align: center;
+      margin-top: -60px;
+    }
+
+    .logo-centered img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 0 10px crimson;
+      background-color: white;
+    }
+
+    header {
+      background-color: #b30000;
+      text-align: center;
+      padding: 20px 10px;
+      border-top: 2px solid #900;
+      border-bottom: 2px solid #900;
+    }
+
+    header h1 {
+      font-size: 36px;
+      color: white;
+      margin: 0;
+    }
+
+    .cuneiform {
+      font-family: 'Cuneiform', serif;
+      font-size: 22px;
+      margin-top: 10px;
+      color: #ddd;
+      letter-spacing: 8px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 16px 0;
+      background-color: #900;
+    }
+
+    nav a {
+      background: white;
+      color: #b30000;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      border: 1px solid crimson;
+      font-size: 14px;
+      box-shadow: inset 0 0 4px #ccc, 2px 2px 4px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #b30000;
+      color: white;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      padding: 40px;
+      align-items: start;
+    }
+
+    .scoreboard {
+      background-color: #262626;
+      padding: 25px;
+      border-radius: 10px;
+      border-left: 4px solid crimson;
+      text-align: right;
+      order: 2;
+    }
+
+    .scoreboard h2 {
+      margin-top: 0;
+      color: crimson;
+    }
+
+    ul, li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    .match {
+      background-color: #333;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .sponsors {
+      background-color: #111;
+      padding: 30px 0;
+      border-top: 2px solid crimson;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .sponsors img {
+      height: 60px;
+    }
+
+    .gallery {
+      background-color: #1a1a1a;
+      padding: 25px;
+      border-radius: 10px;
+      border-right: 4px solid crimson;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    @keyframes borderPulse {
+  0% { box-shadow: 0 0 8px #2e0a0b; }
+  50% { box-shadow: 0 0 16px #d30b0b; }
+  100% { box-shadow: 0 0 8px #980303; }
+}
+
+.slider-img {
+  width: 100%;
+  height: 560px;
+  object-fit: contain;
+  border-radius: 16px;
+  border: none;
+  animation: borderPulse 2s infinite;
+  margin-bottom: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+    .slider-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .slider-buttons button {
+      padding: 10px 15px;
+      background-color: #b30000;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: 'Vazir', sans-serif;
+    }
+
+    .logo-info {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      text-align: center;
+      z-index: 100;
+    }
+
+    .logo-info img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 2px solid crimson;
+      background-color: white;
+    }
+
+    .logo-info p {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #ccc;
+    }
+
+    footer {
+      background-color: #000;
+      color: #999;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-banner"></div>
+
+  <div class="logo-centered">
+    <img src="images/logo1.png" alt="لوگوی پرسپولیس">
+  </div>
+
+  <header>
+    <h1>باشگاه فرهنگی ورزشی پرسپولیس</h1>
+    <div class="cuneiform">𐎱𐎼𐎿𐎫𐎡𐏁</div>
+  </header>
+
+  <nav>
+    <a href="players.html">لیست بازیکنان</a>
+    <a href="history.html">تاریخچه باشگاه</a>
+    <a href="news-events.html">اخبار باشگاه</a>
+    <a href="transfers.html">نقل‌ و انتقالات</a>
+  </nav>
+
+  <div class="main">
+    <div class="gallery">
+      <img id="slider-image" class="slider-img" src="images/poster1.jpg" alt="تصویر">
+      <div class="slider-buttons">
+        <button onclick="prevImage()">قبلی</button>
+        <button onclick="nextImage()">بعدی</button>
+      </div>
+    </div>
+
+    <script>
+  const images = [
+    'images/poster1.jpg',
+    'images/poster2.webp',
+    'images/poster3.jfif',
+    'images/poster4.jpg',
+    'images/poster5.jpg'
+  ];
+  let currentIndex = 0;
+
+  function showImage(index) {
+    const slider = document.getElementById('slider-image');
+    if (slider && images[index]) {
+      slider.src = images[index];
+    }
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  }
+
+  window.onload = function() {
+    showImage(currentIndex);
+  };
+</script>
+
+
+    <div class="scoreboard">
+      <h2>جدول رده‌بندی</h2>
+      <ul>
+        <li class="match">1. پرسپولیس – 38 امتیاز</li>
+        <li class="match">2. استقلال – 35 امتیاز</li>
+        <li class="match">3. سپاهان – 34 امتیاز</li>
+      </ul>
+
+      <h2>بازی‌های آینده</h2>
+      <ul>
+        <li class="match">11/17 - آزادی - 18:00</li>
+        <li class="match">12/14 - آبادان - 18:00</li>
+        <li class="match">2/14 - آزادی - 13:00</li>
+        <li class="match">2/17 - نقش جهان - 11:00</li>
+      </ul>
+
+      <div class="sponsors">
+        <img src="images/tabtabe.png" alt="طبیعت">
+        <img src="images/maj.png" alt="مجید اسپورت">
+        <img src="images/su.png" alt="Uhlsport">
+        <img src="images/sababa.png" alt="صباباتری">
+      </div>
+    </div>
+  </div>
+
+  <div class="logo-info">
+    <img src="images/logo1.png" alt="لوگوی پرسپولیس">
+    <p>فالوورهای اینستاگرام: <strong>10.1M+</strong></p>
+  </div>
+
+  <footer>
+    © AS7 طراحی شده توسط | Persepolis & Code
+  </footer>
+

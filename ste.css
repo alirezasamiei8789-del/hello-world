@@ -1,0 +1,7 @@
+.slider-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid crimson;
+}

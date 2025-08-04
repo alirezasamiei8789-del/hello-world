@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>نقل‌وانتقالات بازیکنان</title>
+  <style>
+    body {
+      font-family: 'Vazir', sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #d30000;
+      margin-bottom: 40px;
+    }
+
+    .transfer-block {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(34, 34, 34, 0.95);
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      overflow: hidden;
+    }
+
+    .transfer-block::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/pastran.png');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.3;
+      filter: blur(1.2px);
+      z-index: 0;
+    }
+
+    .transfer-block > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .player-photo {
+      width: 80%;
+      max-width: 480px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid crimson;
+      margin-bottom: 15px;
+    }
+
+    .info-text {
+      margin-bottom: 20px;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .team-logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 2px solid white;
+      background-color: #fff;
+    }
+
+    .arrow {
+      font-size: 32px;
+      color: #ffd700;
+    }
+
+    @media (max-width: 700px) {
+      .player-photo {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>آخرین نقل‌وانتقالات</h1>
+
+  <!-- 👇 همون بلاک‌های قبلی با عکس و همه چی دست‌نخورده -->
+  <div class="transfer-block">
+    <img class="player-photo" src="images/orpost.webp" alt="بازیکن 1">
+    <div class="info-text">
+      <strong>نام بازیکن:  سرژ اوریه</strong><br>
+      انتقال آزاد  به پرسپولیس - مرداد ۱۴۰۴
+    </div>
+    <div class="logo-area">
+      <img class="team-logo" src="images/logo1.png" alt="پرسپولیس">
+      <div class="arrow">➜</div>
+      <img class="team-logo" src="images/azad.jpg" alt="آزاد">
+    </div>
+  </div>
+ 
+
+  <div class="transfer-block">
+    <img class="player-photo" src="images/abr.jpg" alt="بازیکن 1">
+    <div class="info-text">
+      <strong>نام بازیکن: حسین ابرقویی</strong><br>
+      انتقال از خیبر به پرسپولیس - تیر ۱۴۰۴
+    </div>
+    <div class="logo-area">
+      <img class="team-logo" src="images/logo1.png" alt="پرسپولیس">
+      <div class="arrow">➜</div>
+      <img class="team-logo" src="images/KHEYBAR.jpg" alt="خیبر">
+    </div>
+  </div>
+
+
+  <!-- 🔁 سایر انتقالات همون‌طور که دادی، فقط با بک‌گراند لایه‌ای جدید -->
+  <div class="transfer-block">
+    <img class="player-photo" src="images/bak.jpg" alt="بازیکن 2">
+    <div class="info-text">
+      <strong>نام بازیکن: مارکو باکیچ</strong><br>
+      انتقال آزاد به پرسپولیس - خرداد ۱۴۰۴
+    </div>
+    <div class="logo-area">
+      <img class="team-logo" src="images/logo1.png" alt="پرسپولیس">
+      <div class="arrow">➜</div>
+      <img class="team-logo" src="images/azad.jpg" alt="آزاد">
+    </div>
+  </div>
+
+  <div class="transfer-block">
+    <img class="player-photo" src="images/yas.jpg" alt="بازیکن 3">
+    <div class="info-text">
+      <strong>نام بازیکن:  یاسین سلمانی </strong><br>
+      تمدید دوساله با پرسپولیس - خرداد ۱۴۰۴
+    </div>
+    <div class="logo-area">
+      <img class="team-logo" src="images/logo1.png" alt="پرسپولیس">
+      <div class="arrow">➜</div>
+      <img class="team-logo" src="images/logo1.png" alt="پرسپولیس">
+    </div>
+  </div>
+
+  <div class="transfer-block">
+    <img class="player-photo" src="images/shek.jpg" alt="بازیکن 4">
+    <div class="info-text">
+      <strong>نام بازیکن:   رضا شکاری </strong><br>
+      انتقال از سپاهان به پرسپولیس - خرداد ۱۴۰۴
+    </div>
+    <div class="logo-area">
+      <img class="team-logo" src="images/logo1.png" alt="پرسپولیس">
+      <div class="arrow">➜</div>
+      <img class="team-logo" src="images/sepahan-min.jpg" alt="سپاهان">
+    </div>
+  </div>
+
+  <div class="transfer-block">
+    <img class="player-photo" src="images/payampos.jpg" alt="بازیکن 5">
+    <div class="info-text">
+      <strong>نام بازیکن:  پیام نیازمند  </strong><br>
+      انتقال از سپاهان به پرسپولیس - خرداد ۱۴۰۴
+    </div>
+    <div class="logo-area">
+      <img class="team-logo" src="images/logo1.png" alt="پرسپولیس">
+      <div class="arrow">➜</div>
+      <img class="team-logo" src="images/sepahan-min.jpg" alt="سپاهان">
+    </div>
+  </div>
+
+   <div class="transfer-block">
+    <img class="player-photo" src="images/siyapo.jpg" alt="بازیکن 6">
+    <div class="info-text">
+      <strong>نام بازیکن:   بیوفوما  </strong><br>
+      انتقال آزاد به پرسپولیس - خرداد ۱۴۰۴
+    </div>
+    <div class="logo-area">
+      <img class="team-logo" src="images/logo1.png" alt="پرسپولیس">
+      <div class="arrow">➜</div>
+      <img class="team-logo" src="images/azad.jpg" alt="آزاد">
+    </div>
+  </div>
+
+  <div class="transfer-block">
+    <img class="player-photo" src="images/kazem.jpg" alt="بازیکن 7">
+    <div class="info-text">
+      <strong>نام بازیکن:   محمد امین کاظمیان  </strong><br>
+      انتقال از آلمینیوم به پرسپولیس - خرداد ۱۴۰۴
+    </div>
+    <div class="logo-area">
+      <img class="team-logo" src="images/logo1.png" alt="پرسپولیس">
+      <div class="arrow">➜</div>
+      <img class="team-logo" src="images/Aluminium_Arak_logo.png" alt="آلمینیوم ">
+    </div>
+  </div>
+
+  <div class="transfer-block">
+    <img class="player-photo" src="images/fakhrpo.jpg" alt="بازیکن 8">
+    <div class="info-text">
+      <strong>نام بازیکن:     مجتبی فخریان  </strong><br>
+      انتقال از شمس آذر به پرسپولیس - خرداد ۱۴۰۴
+    </div>
+    <div class="logo-area">
+      <img class="team-logo" src="images/logo1.png" alt="پرسپولیس">
+      <div class="arrow">➜</div>
+      <img class="team-logo" src="images/Shams_Azar_F.C._Logo.png" alt="شمس آذر ">
+    </div>
+  </div>
+
+</body>
+</html>
